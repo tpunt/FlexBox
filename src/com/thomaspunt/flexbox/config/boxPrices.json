@@ -1,0 +1,49 @@
+{
+    "cardGradePrices" : [
+        {
+            "grade" : 1,
+            "price" : 0.50
+        },
+        {
+            "grade" : 2,
+            "price" : 0.59
+        },
+        {
+            "grade" : 3,
+            "price" : 0.70
+        },
+        {
+            "grade" : 4,
+            "price" : 0.92
+        },
+        {
+            "grade" : 5,
+            "price" : 1.35
+        }
+    ],
+
+    "boxAdditionalPrices" : [
+        {
+            "type" : "colourPrint",
+             "value" : 1,
+            "price" : 12
+        },
+        {
+            "type" : "colourPrint",
+            "value" : 2,
+            "price" : 15
+        },
+        {
+            "type" : "reinforcedBottom",
+            "price" : 12
+        },
+        {
+            "type" : "reinforcedCorners",
+            "price" : 8
+        },
+        {
+            "type" : "sealableTops",
+            "price" : 6
+        }
+    ]
+}
