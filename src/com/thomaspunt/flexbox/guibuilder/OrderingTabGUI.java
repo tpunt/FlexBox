@@ -614,10 +614,10 @@ public class OrderingTabGUI
     }
 
     /**
-     * This class is required to hold the ordering window fields for each individual
-     * box order. It also stores the order panel object which is used when collating
-     * all order panels, along with a status field to display an error message if
-     * validation fails.
+     * This class is required to hold the ordering window components (namely the
+     * field components for each individual box order. It also stores the order
+     * panel object which is used when collating all order panels, along with a
+     * status field to display an error message if validation fails.
      */
     private class OrderBoxFields
     {
