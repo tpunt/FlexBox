@@ -494,10 +494,26 @@ public class OrderingTabGUI
                                              , ob.hasReinforcedBottom()
                                              , ob.hasReinforcedCorners());
 
-                if(!boxSizes.isValidWidth(boxWidth)
-                  || !boxSizes.isValidHeight(boxHeight)
-                  || !boxSizes.isValidLength(boxLength)) {
-                    ob.setStatusText("Invalid box size.");
+                if(!boxSizes.isValidWidth(boxWidth)) {
+                    ob.setStatusText("Invalid box width: from "
+                                     + boxSizes.getBoxSizes().getMinWidth()
+                                     + "cm to "
+                                     + boxSizes.getBoxSizes().getMaxWidth()
+                                     + "cm.");
+                    validOrders = false;
+                }else if(!boxSizes.isValidHeight(boxHeight)) {
+                    ob.setStatusText("Invalid box height: from "
+                                     + boxSizes.getBoxSizes().getMinHeight()
+                                     + "cm to "
+                                     + boxSizes.getBoxSizes().getMaxHeight()
+                                     + "cm.");
+                    validOrders = false;
+                }else if(!boxSizes.isValidLength(boxLength)) {
+                    ob.setStatusText("Invalid box length: from "
+                                     + boxSizes.getBoxSizes().getMinLength()
+                                     + "cm to "
+                                     + boxSizes.getBoxSizes().getMaxLength()
+                                     + "cm.");
                     validOrders = false;
                 }else if(boxQuantity < 1) {
                     ob.setStatusText("Invalid box quantity.");

@@ -60,4 +60,15 @@ public class BoxSizes
     {
         return !(boxSizes.getMinLength() > length || boxSizes.getMaxLength() < length);
     }
+    
+    /**
+     * Get the boxSizes instance variable so that the individual width, length, and
+     * height methods can be exposed to classes using this BoxSizes class.
+     * 
+     * @return  The boxSizes instance variable.
+     */
+    public BoxSizesConfig getBoxSizes()
+    {
+        return boxSizes;
+    }
 }

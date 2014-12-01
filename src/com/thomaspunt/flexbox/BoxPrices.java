@@ -66,7 +66,7 @@ public class BoxPrices
                                                            , box.hasReinforcedBottom()
                                                            , box.hasReinforcedCorners()
                                                            , box.hasSealableTops());
-        
+
         if(boxAdditionalsPerc != 0)
             boxPrice += (areaPrice + areaPrice * boxAdditionalsPerc / 100)
                        * box.getQuantity();
