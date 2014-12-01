@@ -495,31 +495,31 @@ public class OrderingTabGUI
                                              , ob.hasReinforcedCorners());
 
                 if(!boxSizes.isValidWidth(boxWidth)) {
-                    ob.setStatusText("Invalid box width: from "
+                    ob.setStatusText("Invalid box width (from "
                                      + boxSizes.getBoxSizes().getMinWidth()
                                      + "cm to "
                                      + boxSizes.getBoxSizes().getMaxWidth()
-                                     + "cm.");
+                                     + "cm).");
                     validOrders = false;
                 }else if(!boxSizes.isValidHeight(boxHeight)) {
-                    ob.setStatusText("Invalid box height: from "
+                    ob.setStatusText("Invalid box height (from "
                                      + boxSizes.getBoxSizes().getMinHeight()
                                      + "cm to "
                                      + boxSizes.getBoxSizes().getMaxHeight()
-                                     + "cm.");
+                                     + "cm).");
                     validOrders = false;
                 }else if(!boxSizes.isValidLength(boxLength)) {
-                    ob.setStatusText("Invalid box length: from "
+                    ob.setStatusText("Invalid box length (from "
                                      + boxSizes.getBoxSizes().getMinLength()
                                      + "cm to "
                                      + boxSizes.getBoxSizes().getMaxLength()
-                                     + "cm.");
+                                     + "cm).");
                     validOrders = false;
                 }else if(boxQuantity < 1) {
-                    ob.setStatusText("Invalid box quantity.");
+                    ob.setStatusText("Invalid box quantity (must be greater than 0).");
                     validOrders = false;
                 }else if (boxType == -1) {
-                    ob.setStatusText("Invalid box type.");
+                    ob.setStatusText("The box type entered is invalid.");
                     validOrders = false;
                 }else{
                     errorOccurred = false;
