@@ -535,7 +535,7 @@ public class OrderingTabGUI
                                              , boxQuantity));
                 }
             }catch(NumberFormatException e) {
-                ob.setStatusText("Invalid input.");
+                ob.setStatusText("Invalid input (where an integer was expected).");
                 validOrders = false;
             }
             
